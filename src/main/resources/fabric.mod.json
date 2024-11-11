@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "hextext",
+  "version": "${version}",
+  "name": "HexText",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/hextext/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "moe.mutsuk1.hextext.HexText"
+    ]
+  },
+  "mixins": [
+    "hextext.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
