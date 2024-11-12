@@ -3,10 +3,12 @@
   "id": "hextext",
   "version": "${version}",
   "name": "HexText",
-  "description": "",
-  "authors": [],
-  "contact": {},
-  "license": "All-Rights-Reserved",
+  "description": "A Hex Casting addon which allows you to use Raw JSON text format by hex",
+  "authors": ["Hoshi3Mutsuk1"],
+  "contact": {
+    "sources": "https://github.com/Hoshi3Mutsuk1/HexText"
+  },
+  "license": "MIT",
   "icon": "assets/hextext/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -18,7 +20,7 @@
     "hextext.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": ">=0.14.21",
     "fabric": "*",
     "minecraft": "${minecraft_version}",
     "hexcasting": ">=0.10.3",
