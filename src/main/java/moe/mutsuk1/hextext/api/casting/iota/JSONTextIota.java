@@ -3,12 +3,14 @@ package moe.mutsuk1.hextext.api.casting.iota;
 import at.petrak.hexcasting.api.spell.iota.Iota;
 import at.petrak.hexcasting.api.spell.iota.IotaType;
 import at.petrak.hexcasting.api.utils.HexUtils;
-import com.google.gson.JsonParseException;
+import com.google.gson.*;
 import net.minecraft.nbt.StringTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 public class JSONTextIota extends Iota {
 
@@ -20,12 +22,20 @@ public class JSONTextIota extends Iota {
     }
 
     public static JSONTextIota make(String s) {
-        try {
-            return new JSONTextIota(Component.Serializer.fromJson(s));
-        } catch (JsonParseException e) {
-            return new JSONTextIota(Component.empty());
-        }
+        return make(List.of(s));
+    }
 
+    public static JSONTextIota make(List<String> list) {
+        try {
+           JsonArray jsonArray = new JsonArray();
+            for (String s : list) {
+                var obj = Component.Serializer.toJsonTree(Component.Serializer.fromJson(s));
+                jsonArray.add(obj);
+            }
+            return make(Component.Serializer.fromJson(jsonArray));
+        } catch (JsonParseException e) {
+           return new JSONTextIota(Component.empty());
+       }
     }
 
     public Component getComponent() {

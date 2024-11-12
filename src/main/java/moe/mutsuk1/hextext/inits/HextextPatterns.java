@@ -7,13 +7,13 @@ import at.petrak.hexcasting.api.spell.math.HexPattern;
 import moe.mutsuk1.hextext.HexText;
 import moe.mutsuk1.hextext.casting.patterns.jsontext.OpGetName;
 import moe.mutsuk1.hextext.casting.patterns.jsontext.OpSetName;
-import moe.mutsuk1.hextext.casting.patterns.jsontext.OpStringText;
+import moe.mutsuk1.hextext.casting.patterns.jsontext.OpMakeJSONText;
 
 public class HextextPatterns {
 
     public static void init() {
         try {
-            registry("string_to_text", "awdwadeewwee", HexDir.SOUTH_EAST, new OpStringText());
+            registry("make", "awdwadeewwee", HexDir.SOUTH_EAST, new OpMakeJSONText());
             registry("get_name", "qaqwewdew", HexDir.EAST, new OpGetName());
             registry("set_name", "edewwqawq", HexDir.NORTH_EAST, new OpSetName());
         } catch (PatternRegistry.RegisterPatternException exn) {

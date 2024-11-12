@@ -1,0 +1,12 @@
+{
+  "hexcasting.spell.hextext:make": "Parse Purification",
+  "//": "sorry moreiotas, but naming is really difficult for me.",
+  "hexcasting.spell.hextext:get_name": "Moniker Purification",
+  "hexcasting.spell.hextext:set_name": "Name",
+  "hextext.entry.text": "JSON Text format",
+  "hextext.page.text.0": "I found a new type of iota that can make the strings appear in different styles. It seems that you need to use a specific spell to make this iota...",
+  "hextext.page.text.link": "Minecraft Wiki",
+  "hextext.page.text.make": "Remove a string or string list from the stack and returns the $(#e2d3f0)$(l)Text$() that string parses as (or $(a)$(l)Empty Text$() if it doesn't parse).",
+  "hextext.page.text.get_name": "Takes an entity and returns that entity's name. If it is an item entity, return the item's name.",
+  "hextext.page.text.set_name": "Takes a $(#e2d3f0)$(l)Text$() and an entity, and sets that entities name to the given $(#e2d3f0)$(l)Text$(). If the entity is an item entity, rename the item."
+}

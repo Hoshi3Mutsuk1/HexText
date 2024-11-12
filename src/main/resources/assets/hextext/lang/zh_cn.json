@@ -1,0 +1,11 @@
+{
+  "hexcasting.spell.hextext:make": "解析之纯化",
+  "hexcasting.spell.hextext:get_name": "绰号之纯化",
+  "hexcasting.spell.hextext:set_name": "赐名",
+  "hextext.entry.text": "JSON文本格式",
+  "hextext.page.text.0": "我发现了一种新型iota，他可以让其中的字符串呈现不同的样式，要制作这种iota似乎需要配合特定的咒语...",
+  "hextext.page.text.link": "Minecraft Wiki",
+  "hextext.page.text.make": "移除栈顶字符串或字符串列表，并返回字符串解析所得的$(#e2d3f0)$(l)文本$()（若无法解析则返回$(a)$(l)空文本$()）。",
+  "hextext.page.text.get_name": "移除栈顶实体，并返回实体的名称，若是实体是物品实体，则返回物品的名称",
+  "hextext.page.text.set_name": "移除栈顶实体和$(#e2d3f0)$(l)文本$()，并将实体命名为给定$(#e2d3f0)$(l)文本$()，若是物品实体，则重命名物品"
+}
