@@ -1,0 +1,27 @@
+# Changes here will be overwritten by Copier. NEVER EDIT MANUALLY
+# See: https://copier.readthedocs.io/en/stable/configuring/#the-copier-answersyml-file
+_commit: v0.1.11
+_src_path: gh:hexdoc-dev/hexdoc-hexcasting-template
+author: Hoshi3Mutsuk1
+book_id: hexcasting:thehexbook
+default_branch: main
+github_repo: HexText
+gradle_mod_version_key: mod_version
+hexdoc_mod_plugin_classname: HextextModPlugin
+hexdoc_plugin_classname: HextextPlugin
+java_lang:
+    ext: java
+    src: java
+java_package: moe/mutsuk1/hextext
+mod_display_name: HexText
+modid: hextext
+multiloader: false
+package_export_root: doc/src/hexdoc_hextext/_export
+package_name: hexdoc-hextext
+package_slug: hexdoc_hextext
+package_src: doc/src/hexdoc_hextext
+pages_url: https://hoshi3mutsuk1.github.io/HexText/
+pattern_regex:
+    per_world_value: 'true'
+    regex: a
+pattern_registry: inits/HextextPatterns.java
